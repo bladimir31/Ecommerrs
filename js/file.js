@@ -1,0 +1,58 @@
+export const producto = [
+    {
+        id:1,
+        name: "Cereza",
+        url:"./images/1cereza.png",
+        stock: 5,
+        price: 20,
+    },
+    {
+        id:2,
+        name: "Limón",
+        url:"./images/2limon.png",
+        stock: 2,
+        price: 3,
+    },
+    {
+        id:3,
+        name: "Manzana",
+        url:"./images/3manzana.png",
+        stock: 8,
+        price: 25,
+    },
+    {
+        id:4,
+        name: "Mango",
+        url:"./images/4mango.png",
+        stock: 9,
+        price: 13,
+    },
+    {
+        id:5,
+        name: "Naranja",
+        url:"./images/5naranja.png",
+        stock: 8,
+        price: 15,
+    },
+    {
+        id:6,
+        name: "Fresa",
+        url:"./images/6fresa.png",
+        stock: 10,
+        price: 30,
+    },
+    {
+        id:7,
+        name: "Uvas",
+        url:"./images/7uva.png",
+        stock: 7,
+        price: 20,
+    },
+    {
+        id:8,
+        name: "Pera",
+        url:"./images/8pera.png",
+        stock: 4,
+        price: 10,
+    },
+]

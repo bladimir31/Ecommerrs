@@ -1,0 +1,245 @@
+:root{
+    --blue-ice:rgb(0, 162, 236);
+    --marrow:   rgb(24, 0, 29);
+    --violeta: rgba(190, 50, 218, 0.699);
+    --violeta-degrade: rgba(196, 72, 221, 0.411);
+    --ice: rgba(86, 2, 243, 0.24);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 95%;
+}
+
+
+.box_content {
+    max-width: 1030px;
+    min-width: 250px;
+    margin: auto;
+    padding: 1rem;
+    
+}
+
+.navbar{
+    position: fixed;
+    height: 6%;
+    width: 100vw;
+    display: flex;
+    gap: 1rem;
+    background-color: var(--marrow);
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar img{
+    padding: 0.5rem;
+}
+ 
+.navbar a{
+    color: var(--blue-ice);
+    padding-left: 1rem;
+}
+
+#dark-mode{
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 36px;
+}
+
+#dark-mode:hover{
+    transform: scale(1.1) !important;
+    background-color: rgb(167, 167, 167);
+}
+
+.Title{
+    margin-top: 1rem;
+    padding: 2rem 2rem 1rem 2rem ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 0.5rem;
+    text-shadow: 0.1rem 0.1rem rgba(190, 50, 218, 0.699);
+}
+
+.Title img{
+    width: 70px; ;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.body_frutaP {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.fruta {
+    padding: 1rem;
+    background-color: var(--violeta-degrade);
+    box-shadow: 0  0.5rem 1rem black;
+    border-radius: 10%;
+    transition: box-shadow 0.5s;
+    transition: transform 0.3s;
+}
+.fruta:hover{
+    box-shadow: 0  0.1rem 5rem rgba(0, 0, 0, 0.719)  ;
+    transform: scale(1.01) ;
+}
+.btn {
+     padding: 0.5em 1em;
+     background-color: var(--violeta);
+     border-radius: 20%;
+     color:white;
+     cursor: pointer;
+}
+.btn:hover{
+     background-color: rgb(0, 121, 46) !important;
+     transform: scale(1.1);
+     box-shadow: 0  0.2rem 0.2rem 0.2rem rgb(255, 255, 255)  ;
+}
+
+.kart {
+    right: 1rem;
+    position: fixed;
+    width: 45px;
+    cursor: pointer;
+    z-index: 1000;
+    
+}
+
+.kart:hover,
+.navbar a:hover { 
+    transform: scale(1.1) !important;
+    color: white;
+} 
+
+.body_kart {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0  0.1rem 3rem 0.5rem var(--violeta);
+    top: 5%;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.5ss;
+    
+    border-bottom-left-radius:1rem ; 
+    padding: 1rem;
+    gap: 1rem
+}
+
+
+.body_kart_content{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: scroll;
+    margin-top: 0.5rem;
+}
+
+.body_kart_content-card{
+    margin-top: 1rem;
+    width: 95%;
+    background-color: var(--ice);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.bkart_img{
+    width: 50%;
+}
+
+.bkart_iconos{
+    display: flex;
+    gap: 0.01em;
+}
+#unit{
+    font-size:1.2em ;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+    
+}
+ .ico-btn_unit{   
+    font-size: 1em;
+    align-self: center;
+ }
+ .ico-btn_unit img{
+    min-width: 25px; 
+    max-width: 40px;
+     padding: 0.2rem;
+ }
+
+ .ico-btn_unit img:hover{
+    background-color: var(--marrow);
+    border-radius: 30%; 
+    transform: scale(1.05);
+}
+
+
+.body_kart_total{
+     width: 100%;
+     height: 20%;
+     background-color: rgb(107, 38, 218);
+
+     right: 0;
+     position: absolute;
+     padding: 1rem;
+
+}
+
+
+.body_kart-show img{
+    width: 1rem;
+    display: block;
+}
+footer{
+    height: 40%;
+    text-align: center;
+
+    background-color: var(--marrow);
+}
+
+footer h2{
+    color: white;
+    padding: 1rem;
+}
+
+@media(min-width:400px ){
+
+    *{
+        font-size: 1em;
+    }
+     
+    img{
+        padding: 0.5rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .navbar{
+        height: 10%;
+    }
+
+    .Title{
+        margin-top: 2rem;
+    }
+
+    .body_kart_content-card{
+        margin-top: 1rem;
+        width: 80%;
+    }
+    .bkart_iconos{
+        gap: 0.5em;
+    }
+
+    #unit{
+        font-size:1.4em ;
+    }
+}
