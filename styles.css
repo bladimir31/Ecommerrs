@@ -193,10 +193,14 @@ img{
 }
 
 
-.body_kart-show img{
-    width: 1rem;
-    display: block;
+.body_kart-show {
+    transform: translateX(0);
+    width: 50%;
+    height: 100%;
+    top:0;
+    right: 0;
 }
+
 footer{
     height: 40%;
     text-align: center;
